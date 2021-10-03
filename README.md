@@ -40,7 +40,7 @@ Unity default code style vs Unirx code style
         }
 ```
 
-## Unirx code style [link](https://github.com/neuecc/UniRx)
+## [Unirx](https://github.com/neuecc/UniRx) code style
 ```C#
         // Giả lập hệ thống Unirx thu nhỏ gồm query, update
         public void InitUnirx()
@@ -88,6 +88,7 @@ Unity default code style vs Unirx code style
             EndTest();
 
             // UNIRX STYLE
+            // Không tính thời gian init action cho unirx
             foreach (GameObject go in gameObjects)
                 go.InitUnirx();
 
@@ -108,8 +109,8 @@ Như kết quả từ Github action:
 - Code theo style unity truyền thống: chạy trong 158ms
 - Code theo style unirx chạy: 217ms **(chậm hơn 59ms)** 
 
-Như vậy hệ thống sẽ bị nặng hơn tầm 37% (59ms * 100/158ms = 37%) nếu sử dụng Unirx
+Như vậy hệ thống sẽ bị nặng hơn >37% (59ms * 100/158ms = 37%) nếu sử dụng Unirx
 
-Kết quả thực tế có thể chậm hơn nhiều vì unirx sẽ override rất nhiều thứ trong toàn hệ thống của Unity.
+Kết quả thực tế có thể chậm hơn nhiều vì unirx sẽ override rất nhiều thứ trong toàn hệ thống của Unity, và lúc init observe stream
 
 
