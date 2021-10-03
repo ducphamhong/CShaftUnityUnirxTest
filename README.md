@@ -113,4 +113,4 @@ Như vậy hệ thống sẽ bị nặng hơn >37% (59ms * 100/158ms = 37%) nế
 
 Kết quả thực tế có thể chậm hơn nhiều vì unirx sẽ override rất nhiều thứ trong toàn hệ thống của Unity, và lúc init observe stream
 
-
+[So sánh với C++](https://github.com/ducphamhong/CPPUnirxTest)

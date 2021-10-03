@@ -52,11 +52,6 @@ namespace TestPerformance
 
 
         #region UNIRX
-        public void UpdateUnirxNull()
-        {
-
-        }
-
         public void InitUnirx()
         {
             gameObject.AsObserver().AddTo(
